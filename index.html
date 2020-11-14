@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,118 +21,86 @@
   </header>
   <div class="container container-fluid time-block">
     <!-- Timeblocks go here -->
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">9 A.M.</span>
+
+    <div id="9-hour" class="row time-block">
+      <div class="col hour">
+        9A.M.
       </div>
-      <textarea value="" id="9-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="9-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">10 A.M.</span>
+    <div id="10-hour" class="row time-block">
+      <div class="col hour">
+        10A.M.
       </div>
-      <textarea value="" id="10-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="10-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">11 A.M.</span>
+    <div id="11-hour" class="row time-block">
+      <div class="col hour">
+        11A.M.
       </div>
-      <textarea value="" id="11-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="11-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">12 P.M.</span>
+    <div id="12-hour" class="row time-block">
+      <div class="col hour">
+        12P.M.
       </div>
-      <textarea value="" id="12-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="12-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">1 P.M.</span>
+    <div id="1-hour" class="row time-block">
+      <div class="col hour">
+        1P.M.
       </div>
-      <textarea value="" id="1-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="1-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">2 P.M.</span>
+    <div id="2-hour" class="row time-block">
+      <div class="col hour">
+        2P.M.
       </div>
-      <textarea value="" id="2-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="2-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">3 P.M.</span>
+    <div id="3-hour" class="row time-block">
+      <div class="col hour">
+        3P.M.
       </div>
-      <textarea value="" id="3-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="3-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">4 P.M.</span>
+    <div id="4-hour" class="row time-block">
+      <div class="col hour">
+        4P.M.
       </div>
-      <textarea value="" id="4-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="4-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
-    <div id="time-block" class="input-group mb-3">
-      <div class="input-group-prepend row">
-        <span class="input-group-text hour">5 P.M.</span>
+    <div id="5-hour" class="row time-block">
+      <div class="col hour">
+        5P.M.
       </div>
-      <textarea value="" id="5-block" type="text" placeholder="Enter Event Here"
-        class="form-control description textarea"></textarea>
-      <div class="input-group-append">
-        <button id="5-button" class="btn btn-outline-secondary saveBtn" type="button"><i
-            class="fas fa-save"></i></button>
-      </div>
+      <textarea class="col-md-10 input description"></textarea>
+      <button class="btn saveBtn col"><i class="far fa-save"></i></button>
     </div>
 
   </div>
-  <!-- <script type="text/javascript" src="script.js"></script> -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+
 </body>
 
 </html>

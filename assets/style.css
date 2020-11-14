@@ -22,10 +22,13 @@ textarea{
 }
 
 .description{
+  box-sizing: border-box;
+  border-style: groove;
+  border-color: lightslategray;
   white-space: pre-wrap;
 }
 
-#time-block{
+.hour-block{
 text-align: center;
 margin-top: -16px;
 }
@@ -44,7 +47,7 @@ margin-top: -16px;
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border: 1px groove #000000;
 }
 
 .past {

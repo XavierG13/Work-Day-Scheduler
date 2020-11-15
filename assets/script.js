@@ -5,6 +5,8 @@ $(document).ready(function () {
     currentDayEl = moment().format('MMMM Do YYYY, h:mm a');
     $("#currentDay").append(currentDayEl);
 
+
+
     //this section will determine if our time is in the past, present or future
 
     function updateColor() {
@@ -27,8 +29,6 @@ $(document).ready(function () {
                 $(this).removeClass("present");
                 $(this).addClass("future");
             }
-
-            console.log(timeBlock);
         })
     };
     updateColor();
@@ -38,30 +38,30 @@ $(document).ready(function () {
     function savePlanner() {
 
         $(".time-block").each(function () {
-
             var descriptionEl = localStorage.getItem($(this).attr("id"));
             console.log(descriptionEl);
 
             if (descriptionEl !== null) {
-                $(this).children(".description").val(descriptionEl);
+                $(this).children(".schedule").val(descriptionEl);
             }
-        })
+            //this click function is for when you hit the save icon
+            $(".saveBtn").on("click", function (event) {
+
+                var timeEl = $(this).parent().attr("id");
+                var valueEl = $(this).siblings(".description").val();
+                console.log(valueEl);
+
+                localStorage.setItem(timeEl, valueEl);
+                console.log(localStorage);
+
+                // var inputVal = $(this).parent().attr("id");
+                // inputVal.appendTo(localStorage.getItem(descriptionEl));
+            })
+
+        });
+
     }
 
     savePlanner();
-
-    //this click function is for when you hit the save icon
-    $(".saveBtn").on("click", function (event) {
-
-        event.preventDefault();
-
-        var timeEl = $(this).parent().attr("id");
-        var valueEl = $(this).siblings(".description");
-        console.log(valueEl);
-
-        localStorage.setItem(timeEl, valueEl);
-        console.log(localStorage);
-
-    })
 
 });

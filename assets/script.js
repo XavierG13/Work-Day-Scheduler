@@ -57,9 +57,10 @@ $(document).ready(function () {
                 console.log(valueEl);
                 console.log(timeEl);
 
-                localStorage.setItem(timeEl, valueEl);
+                localStorage.setItem(timeEl, JSON.stringify(valueEl));
                 console.log(localStorage);
 
+                // $(".description").localStorage.getItem(JSON.stringify(valueEl));
                 // document.getElementById(id).innerHTML = valueEl.trim();
                 // var inputVal = $(this).parent().attr("id");
                 // inputVal.appendTo(localStorage.getItem(descriptionEl));

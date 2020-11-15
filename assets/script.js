@@ -1,3 +1,8 @@
+var descriptionInput = document.getElementById(".description");
+descriptionForm = document.getElementById(id);
+
+
+
 $(document).ready(function () {
 
     //here you will see that the current day and time are set to the page
@@ -63,5 +68,21 @@ $(document).ready(function () {
     }
 
     savePlanner();
+
+    // descriptionForm.addEventListener("submit", function (event) {
+    //     event.preventDefault();
+
+    //     var descriptionText = descriptionInput.value.trim();
+
+    //     if (descriptionText === "") {
+    //         return;
+    //     }
+
+    //     descriptionForm.push(descriptionText);
+    //     descriptionInput.value = "";
+
+    //     renderDescriptions();
+
+    // })
 
 });

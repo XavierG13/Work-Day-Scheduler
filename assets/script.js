@@ -1,5 +1,5 @@
-var descriptionInput = document.getElementById(".description");
-descriptionForm = document.getElementById(id);
+// var descriptionInput = document.getElementById(".description");
+// descriptionForm = document.getElementById(id);
 
 
 
@@ -55,10 +55,12 @@ $(document).ready(function () {
                 var timeEl = $(this).parent().attr("id");
                 var valueEl = $(this).siblings(".description").val();
                 console.log(valueEl);
+                console.log(timeEl);
 
                 localStorage.setItem(timeEl, valueEl);
                 console.log(localStorage);
 
+                // document.getElementById(id).innerHTML = valueEl.trim();
                 // var inputVal = $(this).parent().attr("id");
                 // inputVal.appendTo(localStorage.getItem(descriptionEl));
             })

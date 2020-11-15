@@ -27,21 +27,39 @@ $(document).ready(function () {
                 $(this).removeClass("present");
                 $(this).addClass("future");
             }
+
+            console.log(timeBlock);
         })
     };
     updateColor();
-    console.log(updateColor);
 
+    //this function will save the events in the planner in local storage
 
-    //this listener is for when you hit the save icon
+    function savePlanner() {
+        $(".time-block").each(function () {
+            var id = $(this).attr("id");
+            var descriptionEl = localStorage.getItem(id);
+
+            if (descriptionEl !== null) {
+                $(this).children(".description").val(descriptionEl);
+            }
+        })
+    }
+
+    savePlanner();
+
+    //this click function is for when you hit the save icon
     $(".saveBtn").on("click", function (event) {
 
-        var inputVal = $(this).siblings(".description");
-        console.log(inputVal);
-        var timeEl = $(this).parent().attr("id");
+        event.preventDefault();
 
-        localStorage.setItem(inputVal, timeEl);
+        var valueEl = $(this).siblings(".description");
+        console.log(valueEl);
+        var timeEl = $(this).paremt().attr("id");
+
+        localStorage.setItem(timeEl, valueEl);
         console.log(localStorage);
 
     })
+
 });

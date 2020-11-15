@@ -11,5 +11,9 @@
     The current day and time will be set to the top of the page to users can see what day they are on. This will also update for each day that passes the new day will be set. 
     Users will also be able to place their events in the respective time intervals. When the day or event has passed you will see that the color changes. This also goes for the day in the present and future.
 
-## 
+## Sources and Preview
 
+[github](https://github.com/XavierG13/Work-Day-Scheduler)
+[website](https://xavierg13.github.io/Work-Day-Scheduler/)
+
+![img](assets\screencapture-file-C-Users-guzma-Work-Day-Scheduler-index-html-2020-11-14-18_53_45.png)

@@ -16,7 +16,7 @@ $(document).ready(function () {
         $(".time-block").each(function () {
 
             var timeBlock = parseInt($(this).attr("id"));
-            //run an if else statemet to deteremine the time period
+            //run an if else statemet to deteremine the time period. will choose color after it identifies time
 
             if (timeBlock < currentHourEl) {
                 $(this).addClass("past");
@@ -36,9 +36,11 @@ $(document).ready(function () {
     //this function will save the events in the planner in local storage
 
     function savePlanner() {
+
         $(".time-block").each(function () {
-            var id = $(this).attr("id");
-            var descriptionEl = localStorage.getItem(id);
+
+            var descriptionEl = localStorage.getItem($(this).attr("id"));
+            console.log(descriptionEl);
 
             if (descriptionEl !== null) {
                 $(this).children(".description").val(descriptionEl);
@@ -53,9 +55,9 @@ $(document).ready(function () {
 
         event.preventDefault();
 
+        var timeEl = $(this).parent().attr("id");
         var valueEl = $(this).siblings(".description");
         console.log(valueEl);
-        var timeEl = $(this).paremt().attr("id");
 
         localStorage.setItem(timeEl, valueEl);
         console.log(localStorage);
